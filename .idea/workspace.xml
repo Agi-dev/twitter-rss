@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b75b044-af71-4e0a-99e4-ca069680c985" name="Default" comment="" />
+    <list default="true" id="7b75b044-af71-4e0a-99e4-ca069680c985" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/credentials_default.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/functions.php" afterPath="$PROJECT_DIR$/vendor/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rss.php" afterPath="$PROJECT_DIR$/rss.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="twitter-rss.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1362747298677" ignored="false" />
-    <file path="/rss.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1362752506948" ignored="false" />
+    <file path="/index.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1372923767994" ignored="false" />
+    <file path="/rss.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1372924350812" ignored="false" />
+    <file path="/credentials_default.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1372923434618" ignored="false" />
+    <file path="/Dummy.txt" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1373007311758" ignored="false" />
+    <file path="/credentials.php" changelist="7b75b044-af71-4e0a-99e4-ca069680c985" time="1372923725838" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +39,25 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="18" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
+            <state line="25" column="18" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credentials_default.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/credentials_default.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="17" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="credentials.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/credentials.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="66" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -55,7 +84,7 @@
       <file leaf-file-name="rss.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rss.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="643" selection-end="643" vertical-scroll-proportion="0.32863188">
+            <state line="48" column="14" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.8561354">
               <folding>
                 <element signature="e#6#165#0" expanded="true" />
               </folding>
@@ -63,19 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apache.conf" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/apache.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="22" selection-start="34" selection-end="41" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="functions.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
+            <state line="22" column="10" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -88,13 +108,23 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/conf/apache.conf" />
-        <option value="$PROJECT_DIR$/vendor/functions.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/test.xml" />
+        <option value="$PROJECT_DIR$/conf/credentials_default.php" />
+        <option value="$PROJECT_DIR$/conf/credentials.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/vendor/functions.php" />
         <option value="$PROJECT_DIR$/rss.php" />
       </list>
     </option>
@@ -106,7 +136,7 @@
     <option name="width" value="1554" />
     <option name="height" value="916" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -205,7 +235,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings.github" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../smartbacklog" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -252,14 +282,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1554" height="916" extended-state="1" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1554" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298292" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25670242" sideWeight="0.67017084" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26340482" sideWeight="0.67017084" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -335,22 +365,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rss.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="643" selection-end="643" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#6#165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/apache.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="34" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="0.0">
@@ -390,9 +404,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/apache.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="34" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="22" selection-start="34" selection-end="41" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/functions.php">
@@ -402,30 +414,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/apache.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="22" selection-start="34" selection-end="41" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="5" selection-start="5" selection-end="5" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/twitteroauth/twitteroauth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="22" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/twitteroauth/OAuth.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="22" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -435,16 +426,49 @@
         <state line="80" column="9" selection-start="2485" selection-end="2485" vertical-scroll-proportion="0.34555712" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/twitteroauth/OAuth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="22" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/credentials_default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="17" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/credentials.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="66" selection-start="263" selection-end="263" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="1037" selection-end="1037" vertical-scroll-proportion="0.0">
+        <state line="25" column="18" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/apache.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="318" selection-end="318" vertical-scroll-proportion="0.27755103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="10" selection-start="587" selection-end="587" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rss.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="643" selection-end="643" vertical-scroll-proportion="0.32863188">
+        <state line="48" column="14" selection-start="1804" selection-end="1804" vertical-scroll-proportion="0.8561354">
           <folding>
             <element signature="e#6#165#0" expanded="true" />
           </folding>

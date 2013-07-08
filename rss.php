@@ -31,7 +31,13 @@ foreach ($data as $twit) {
         $twit = $twit['retweeted_status'];
     }
 
-    $rssfeed .= '<description>' . $twit['text'] . '</description>';
+    // On recherche des Urls
+    if (count($twit['entities']['urls']) > 0 ) {
+        foreach($twit['entities']['urls'] as $url) {
+            $twit['text'] = str_replace($url['url'], '<a href="'.$url['expanded_url'].'">'.$url['display_url'].'</a>', $twit['text']);
+        }
+    }
+    $rssfeed .= '<description><![CDATA[<p>' . $twit['text'] . '</p>]]></description>';
     $rssfeed .= '<link>' . $twitter_client . $twit['user']['screen_name'] . '</link>';
     $rssfeed .= '<pubDate>' . $twit['created_at'] . '</pubDate>';
     $rssfeed .= '</item>';

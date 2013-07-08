@@ -9,11 +9,8 @@
  */
 
 //1 - Settings
-$consumer_key       = '';
-$consumer_secret    = '';
-$oauth_token        = '';
-$oauth_token_secret = '';
-$twitter_client     = 'https://tweetcaster.com/';
+include('conf/credentials.php');
+$twitter_client     = 'https://twitter.com/';
 
 //2 - Include @abraham's PHP twitteroauth Library
 require_once('vendor/twitteroauth/twitteroauth.php');
