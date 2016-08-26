@@ -23,4 +23,5 @@ $connection->decode_json = FALSE;
 //4 - Start Querying
 $query = 'https://api.twitter.com/1.1/statuses/home_timeline.json'; //Your Twitter API query
 $data = json_decode($connection->get($query), true);
+//f_dbg($data);
 include 'rss.php';

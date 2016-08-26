@@ -31,15 +31,30 @@ foreach ($data as $twit) {
         $twit = $twit['retweeted_status'];
     }
 
+
     // On recherche des Urls
     if (count($twit['entities']['urls']) > 0 ) {
         foreach($twit['entities']['urls'] as $url) {
-            $twit['text'] = str_replace($url['url'], '<a href="'.$url['expanded_url'].'">'.$url['display_url'].'</a>', $twit['text']);
+            $twit['text'] = str_replace(
+                $url['url'],
+                '<a href="' . $url['expanded_url'] . '">' . $url['display_url'] . '</a>',
+                $twit['text']
+            );
         }
     }
     $rssfeed .= '<description><![CDATA[<p>' . $twit['text'] . '</p>]]></description>';
     $rssfeed .= '<link>' . $twitter_client . $twit['user']['screen_name'] . '</link>';
     $rssfeed .= '<pubDate>' . $twit['created_at'] . '</pubDate>';
+
+    // On recherche des images
+    if (count($twit['entities']['media']) > 0 && $twit['entities']['media'][0]['type'] == 'photo') {
+        $rssfeed .= '<media:content
+                        url="'.$twit['entities']['media'][0]['media_url'].'" 
+                        type="image/jpeg" 
+                        height="'.$twit['entities']['media'][0]['sizes']['medium']['h'].'" 
+                        width="'.$twit['entities']['media'][0]['sizes']['medium']['w'].'"/>';
+    }
+
     $rssfeed .= '</item>';
 }
 
