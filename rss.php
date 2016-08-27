@@ -8,16 +8,15 @@
  */
 
 //f_dbg($data);
-
 header("Content-Type: application/rss+xml; charset=utf-8");
-$rssfeed = '<?xml version="1.0" encoding="UTF-8"?>';
-$rssfeed .= '<rss version="2.0">';
-$rssfeed .= '<channel>';
-$rssfeed .= '<title>My Twitter RSS feed</title>';
-$rssfeed .= '<link>http://www.amiphi.fr/rss</link>';
-$rssfeed .= '<description>This is an example RSS feed</description>';
-$rssfeed .= '<language>fr-fr</language>';
-$rssfeed .= '<copyright>Copyright (C) 2009 mywebsite.com</copyright>';
+$rssfeed = '<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">' . PHP_EOL;
+$rssfeed .= '<channel>' . PHP_EOL;
+$rssfeed .= '<title>My Twitter RSS feed</title>' . PHP_EOL;
+$rssfeed .= '<link>http://www.amiphi.fr/rss</link>' . PHP_EOL;
+$rssfeed .= '<description>Mon flux rss</description>' . PHP_EOL;
+$rssfeed .= '<language>fr</language>' . PHP_EOL;
+$rssfeed .= '<copyright>Copyright 2012, FeelPiX</copyright>' . PHP_EOL;
+$rssfeed .= '<link>http://www.amiphi.fr/rss</link>' . PHP_EOL;
 
 foreach ($data as $twit) {
     $rssfeed .= '<item>';
@@ -42,23 +41,28 @@ foreach ($data as $twit) {
             );
         }
     }
-    $rssfeed .= '<description><![CDATA[<p>' . $twit['text'] . '</p>]]></description>';
-    $rssfeed .= '<link>' . $twitter_client . $twit['user']['screen_name'] . '</link>';
-    $rssfeed .= '<pubDate>' . $twit['created_at'] . '</pubDate>';
+
+    $twit['text'] = '<p>' . $twit['text'] . '</p>' . PHP_EOL;
 
     // On recherche des images
-    if (count($twit['entities']['media']) > 0 && $twit['entities']['media'][0]['type'] == 'photo') {
-        $rssfeed .= '<media:content
-                        url="'.$twit['entities']['media'][0]['media_url'].'" 
-                        type="image/jpeg" 
-                        height="'.$twit['entities']['media'][0]['sizes']['medium']['h'].'" 
-                        width="'.$twit['entities']['media'][0]['sizes']['medium']['w'].'"/>';
+    if (true === array_key_exists('media', $twit['entities'])
+        && count($twit['entities']['media']) > 0
+        && $twit['entities']['media'][0]['type'] == 'photo') {
+        $twit['text'] .= '<p><img 
+            src="'.$twit['entities']['media'][0]['media_url'].'" 
+            width="'.$twit['entities']['media'][0]['sizes']['medium']['w'].'" 
+            height="'.$twit['entities']['media'][0]['sizes']['medium']['h'].'">
+            </p>' . PHP_EOL;
     }
 
-    $rssfeed .= '</item>';
+    $rssfeed .= '<description><![CDATA[' . $twit['text'] . ']]></description>' . PHP_EOL;
+    $rssfeed .= '<link>' . $twitter_client . $twit['user']['screen_name'] . '</link>' . PHP_EOL;
+    $rssfeed .= '<pubDate>' . $twit['created_at'] . '</pubDate>' . PHP_EOL;
+
+    $rssfeed .= '</item>' . PHP_EOL;
 }
 
-$rssfeed .= '</channel>';
-$rssfeed .= '</rss>';
+$rssfeed .= '</channel>' . PHP_EOL;
+$rssfeed .= '</rss>' . PHP_EOL;
 
 echo $rssfeed;
